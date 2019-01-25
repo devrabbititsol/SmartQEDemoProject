@@ -160,7 +160,7 @@ public class BaseClass {
 
 		driver.manage().deleteAllCookies();
 		driver.get(configFileObj.getProperty("URL"));
-		//driver.manage().window().maximize();
+		driver.manage().window().maximize();
 		//driver.manage().window().fullscreen();
 		//driver.manage().window().setSize(new Dimension(1044,784));
 		return driver;
