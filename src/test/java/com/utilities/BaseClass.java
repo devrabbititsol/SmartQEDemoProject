@@ -13,7 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.interactions.Actions;
+
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -218,8 +218,8 @@ public class BaseClass {
 	// mouseHover
 	public void mouseHover(WebDriver webDriver, WebElement element) {
 		
-		 Actions action = new Actions(webDriver);
-		 action.moveToElement(element).build().perform();
+		// Actions action = new Actions(webDriver);
+		// action.moveToElement(element).build().perform();
 		//action.moveToElement(we).moveToElement(driver.findElement(By.xpath(elementClickXpath))).click().build().perform();	
 	}
 	
